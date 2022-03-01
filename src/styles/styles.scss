@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import "./themes.css";
+@import "./Card.component.scss";
+@import "./Toggle.component.scss";
+@import "./Tag.component.scss";
+
+$title-color: #ff0000;
+$navbar-breakpoint: 0px;
+$card-radius: 0;
+$card-header-shadow: 0;
+$card-shadow: 0;
+$tablet: 600px;
+
+@import "~bulma/bulma.sass";
+
+$breakpoint: 720px;
+
+.app {
+    .hero {
+        background-color: var(--color-html-bg);
+    }
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    height: calc(100vh - 40px);
+    transition: all .5s;
+    padding: 0px;
+    .button{
+      background-color: var(--color-btn-bg);
+      &:hover{
+        background-color: var(--color-btn-bg-hover);
+      }
+    }
+  }
+
+#wrapper {
+    width: $breakpoint;
+    min-width: 450px;
+    margin: 20px auto;
+    padding: 0px;
+    border: 1px solid var(--color-border-default);
+    background-color: transparent;
+
+    @include until($breakpoint) {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block{
+        margin: 0;
+    }
+}
+
+#header{
+    padding: 20px;
+    top: 0em;
+    background-color: var(--color-wrapper-header-bg);
+    position: sticky;
+    border-bottom: 1px solid var(--color-border-default);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    z-index: 1000;
+    button {
+        border-radius: 3px;
+        border: 0px;
+        height: 70%;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover{
+            background-color: var(--color-border-default);
+        }
+    };
+    .navbar-brand{
+        align-items: center;
+    }
+}
+
+.content{
+    padding: 40px;
+    margin-bottom: 3rem;
+    z-index: 100;
+
+    h1 {
+        font-weight: 700;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border-default);
+    }
+
+    #me{
+        margin: auto;
+    }
+
+}
+
+#footer{
+    padding: 20px;
+    border-top: 1px solid var(--color-border-default);
+}
+
+#me_wrapper{
+    text-align: center;
+}
+#me {
+    width: 130px;
+    border: 1px solid var(--color-border-default);
+}

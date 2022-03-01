@@ -1,0 +1,51 @@
+@import "~bulma/bulma.sass";
+@import "./themes.css";
+
+.card {
+  margin: auto auto 10px auto;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  
+  .card-header {
+    border: 1px solid var(--color-border-default);
+    background-color: var(--color-card-bg);
+    border-radius: 0px;
+    box-shadow: none;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--color-card-hover-bg);
+    }
+    .card-header-icon{
+      p {
+        margin-right: 5px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  
+  .card-header.is-opened {
+    background-color: var(--color-card-hover-bg);
+
+    .icon{
+      transform: rotate(180deg);
+    }
+  }
+
+  .card-content{
+    border-radius: 0px;
+    border-bottom: 1px solid var(--color-border-default);
+    border-left: 1px solid var(--color-border-default);
+    border-right: 1px solid var(--color-border-default);
+    transition: all 1s ease;
+    padding: 0px;
+
+    .title {
+      font-weight: 700;
+      span {
+        color: lightblue;
+      }
+    }
+  }
+}
