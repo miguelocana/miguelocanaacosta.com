@@ -27,6 +27,8 @@
 
     --color-tag-bg: #dff7ff;
     --color-tag-border: #0349b4;
+    --color-tag-hover-bg: #0349b4;
+    --color-tag-hover-text: white;
     
     /* Fonts and sizes */
     --fz-xxs: 12px;
@@ -67,5 +69,8 @@
     
     --color-tag-bg: rgba(64,158,255,0.15);
     --color-tag-border: #409eff;
+    --color-tag-hover-bg: #409eff;
+    --color-tag-hover-text: black;
+    
   }
   
