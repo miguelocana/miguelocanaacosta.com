@@ -32,7 +32,7 @@ export default function Card(props) {
               {content.what} <span>@ {content.where}</span>
             </div>
 
-            <div className="subtitle is-6">
+            <div className="subtitle is-6 is-family-monospace">
               {content.from} - {content.to}
             </div>
 

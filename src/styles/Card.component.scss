@@ -3,30 +3,41 @@
 
 .card {
   margin: auto auto 10px auto;
-
+  color: var(--color-fg-default);
   &:last-child{
     margin-bottom: 0px;
   }
   
   .card-header {
     border: 1px solid var(--color-border-default);
-    background-color: var(--color-card-bg);
+    background-color: var(--color-wrapper-content-bg);
     border-radius: 0px;
     box-shadow: none;
     cursor: pointer;
+
     &:hover {
-      background-color: var(--color-card-hover-bg);
+      background-color: var(--color-wrapper-header-bg);
     }
+
     .card-header-icon{
+      color: var(--color-fg-default);
       p {
         margin-right: 5px;
         margin-bottom: 0px;
+        font-family: $family-monospace;
+        font-size: var(--fz-xs);
+        color: var(--color-fg-subtitle);
       }
     }
+
+    #where{
+      color: var(--color-fg-default);
+    }
+
   }
   
   .card-header.is-opened {
-    background-color: var(--color-card-hover-bg);
+    background-color: var(--color-wrapper-header-bg);
 
     .icon{
       transform: rotate(180deg);
