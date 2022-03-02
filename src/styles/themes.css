@@ -1,5 +1,5 @@
 :root {
-    --color-html-bg: white;
+    --color-html-bg: rgb(237, 237, 237);
     --color-wrapper-header-bg: #E7ECF0;
     --color-wrapper-content-bg: white;
     --color-wrapper-footer-bg: white;
@@ -7,8 +7,8 @@
     --color-border-default: #20252C;
 
     --color-fg-title: rgb(155, 67, 67);
-    --color-fg-subtitle: grey;
-    --color-fg-default: black;
+    --color-fg-subtitle: #3e434b;
+    --color-fg-default: #0a0c10;
     --color-fg-accent: #0349b4;
 
     --color-btn-bg: #e7ecf0;
@@ -17,9 +17,6 @@
     --color-btn-hover-bg: #d2d7db;
     --color-btn-hover-text: #0e1116;
     --color-btn-hover-border: #0e1116;
-
-    --color-card-bg: #ffffff;
-    --color-card-hover-bg: #E7ECF0;
 
     --color-toggle-bg: #272b33;
     --color-toggle-circle: white;
@@ -41,36 +38,30 @@
 }
 
 [data-theme="dark"] {
-    --color-html-bg: black;
-    --color-wrapper-header-bg: #272b33;
-    --color-wrapper-content-bg: white;
-    --color-wrapper-footer-bg: white;
+    --color-html-bg: #171a1f;
+    --color-wrapper-header-bg: #2d333b;
+    --color-wrapper-content-bg: #22272e;
+    --color-wrapper-footer-bg: #22272e;
     
-    --color-border-default: white;
+    --color-border-default: #444c56;
     
     --color-fg-title: rgb(155, 67, 67);
-    --color-fg-subtitle: grey;
-    --color-fg-default: black;
+    --color-fg-subtitle: #72787e;
+    --color-fg-default: #adbac7;
     --color-fg-accent: #409eff;
     
-    --color-btn-bg: #e7ecf0;
-    --color-btn-text: #0e1116;
-    --color-btn-border: #0e1116;
-    --color-btn-hover-bg: #d2d7db;
-    --color-btn-hover-text: #0e1116;
-    --color-btn-hover-border: #0e1116;
-
-    --color-card-bg: #ffffff;
-    --color-card-hover-bg: #E7ECF0;
+    --color-btn-bg: #373e47;
+    --color-btn-text: #adbac7;
+    --color-btn-border: rgba(205,217,229,0.1);
+    --color-btn-hover-bg: #44484d;
     
     --color-toggle-bg: #E7ECF0;
-    --color-toggle-circle: black;
+    --color-toggle-circle: #0a0c10;
     --color-toggle-hover-bg: #b5b5b5;
     
     --color-tag-bg: rgba(64,158,255,0.15);
     --color-tag-border: #409eff;
     --color-tag-hover-bg: #409eff;
-    --color-tag-hover-text: black;
+    --color-tag-hover-text: #0a0c10;
     
   }
-  
