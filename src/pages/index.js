@@ -9,6 +9,7 @@ import useLocalStorage from "use-local-storage";
 import Toggle from "react-toggle";
 import Tag from "../components/Tag"
 import ContactButton from "../components/ContactButton"
+import ReactTypingEffect from "react-typing-effect";
 
 const IndexPage = () => {
 
@@ -55,10 +56,10 @@ const IndexPage = () => {
                   </span>
               </div>
 
-              <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-menu">
                 
                 <div class="navbar-start">
-                  <a class="navbar-item" href="https://github.com/miguelocana" id="user">
+                  <a class="navbar-item" href="https://github.com/miguelocana" id="user" target="_blank">
                     <strong>miguelocana</strong>
                   </a>
                   
@@ -102,28 +103,32 @@ const IndexPage = () => {
                   <p>
                     Hey! Soy Miguel, de Madrid.
                   </p>
+
                   <p>
-                    Soy bionformático/software engineer, apasionado de las nuevas tecnologías y con especial interés en backend y machine learning.
+                    Soy{" "}
+                    <strong>
+                      <ReactTypingEffect
+                        text={["bioinformático", "software engineer"]}
+                        speed={40}
+                      />
+                    </strong>
+                    . Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
                   </p>
                   <p>
-                    Construyo software. Cuando no estoy programando, estoy tocando la guitarra.
+                    <div className="columns is-centered">
+                      <div className="column is-narrow">
+                        <Tag title="machine-learning"/>
+                      </div>
+                      <div className="column is-narrow">
+                        <Tag title="bioinformatics"/>
+                      </div>
+                      <div className="column is-narrow">
+                        <Tag title="software-development"/>
+                      </div>
+                    </div>              
                   </p>
                 </div>
               </div>
-              <p>
-                Mis campos principales de interés son:
-              </p>
-              <div className="columns is-centered">
-                <div className="column is-narrow">
-                  <Tag title="machine-learning"/>
-                </div>
-                <div className="column is-narrow">
-                  <Tag title="bioinformatics"/>
-                </div>
-                <div className="column is-narrow">
-                  <Tag title="software-development"/>
-                </div>
-              </div>              
             </Section>
 
             <Section title="experience">
@@ -153,9 +158,11 @@ const IndexPage = () => {
           </div>
 
           <div class="block" id="footer">
-            <a href="https://github.com/miguelocana/miguelocanaacosta.com">
-              Built by Miguel Ocaña
-            </a>
+            <div className="container has-text-centered">
+              <a href="https://github.com/miguelocana/miguelocanaacosta.com">
+                Built by Miguel Ocaña
+              </a>
+            </div>
           </div>
 
 
