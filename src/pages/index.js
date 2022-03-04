@@ -10,6 +10,9 @@ import Toggle from "react-toggle";
 import Tag from "../components/Tag"
 import ContactButton from "../components/ContactButton"
 import ReactTypingEffect from "react-typing-effect";
+import Minisection from "../components/Minisection"
+import GithubIcon from "../images/github.svg";
+import LinkedinIcon from "../images/linkedin.svg";
 
 const IndexPage = () => {
 
@@ -60,15 +63,15 @@ const IndexPage = () => {
                 
                 <div class="navbar-start">
                   <a class="navbar-item" href="https://github.com/miguelocana" id="user" target="_blank">
-                    <strong>miguelocana</strong>
+                    miguelocana
                   </a>
                   
                   <span className="navbar-item">
-                    <strong>/</strong>
+                    /
                   </span>
 
                   <a class="navbar-item" href="http://localhost:8000/" id="readme">
-                    <strong>README.md</strong>
+                    <strong>README</strong>
                   </a>
                 </div>
 
@@ -98,10 +101,46 @@ const IndexPage = () => {
               <div className="columns">
                 <div className="column is-one-quarter" id="me_wrapper">
                     <img src={me} id="me"/>
+                    
+                    <Minisection title="Social media">
+
+                      <div class="card social-media">
+                        <header class="card-header">
+                          <button class="card-header-icon" >
+                            <span class="icon">
+                              <i class="fab fa-linkedin-in"></i>
+                            </span>
+                          </button>
+                          <p class="card-header-title">
+                              @miguelocanaacosta
+                          </p>
+                        </header>
+                      </div>
+                      <div class="card social-media">
+                        <header class="card-header">
+                          <button class="card-header-icon" >
+                            <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                          </button>
+                          <p class="card-header-title">
+                              @miguelocana
+                          </p>
+                        </header>
+                      </div>
+
+                    </Minisection>
+                    
+                    <Minisection title="Campos de interés">
+                      <Tag title="machine-learning"/>{" "}
+                      <Tag title="bioinformatics"/>{" "}
+                      <Tag title="software-development"/>{" "}
+                    </Minisection>
+
                 </div>
                 <div className="column is-three-quarter">
                   <p>
-                    Hey! Soy Miguel, de Madrid.
+                    Hey! I'm Miguel, I currently live in Madrid.
                   </p>
 
                   <p>
@@ -110,23 +149,23 @@ const IndexPage = () => {
                       <ReactTypingEffect
                         text={["bioinformático", "software engineer"]}
                         speed={40}
+                        className="typing"
                       />
                     </strong>
-                    . Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
                   </p>
+                  
                   <p>
-                    <div className="columns is-centered">
-                      <div className="column is-narrow">
-                        <Tag title="machine-learning"/>
-                      </div>
-                      <div className="column is-narrow">
-                        <Tag title="bioinformatics"/>
-                      </div>
-                      <div className="column is-narrow">
-                        <Tag title="software-development"/>
-                      </div>
-                    </div>              
+                    Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
                   </p>
+                  
+                  <p>
+                    Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
+                  </p>
+                  
+                  <p>
+                    Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
+                  </p>
+
                 </div>
               </div>
             </Section>
@@ -134,7 +173,9 @@ const IndexPage = () => {
             <Section title="experience">
               
               <p>
-                Aqui cuento un poco mi vida: 
+                <div className="notification">
+                  Un resumen de mi trayectoria profesional y académica...
+                </div>
               </p>
 
               {content.map((c) => {
