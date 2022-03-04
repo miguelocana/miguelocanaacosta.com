@@ -5,6 +5,7 @@
     --color-wrapper-footer-bg: white;
     
     --color-border-default: #20252C;
+    --color-border-muted: #88929D;
 
     --color-fg-title: rgb(155, 67, 67);
     --color-fg-subtitle: #3e434b;
@@ -44,7 +45,8 @@
     --color-wrapper-footer-bg: #22272e;
     
     --color-border-default: #444c56;
-    
+    --color-border-muted: #363b41;
+
     --color-fg-title: rgb(155, 67, 67);
     --color-fg-subtitle: #72787e;
     --color-fg-default: #adbac7;

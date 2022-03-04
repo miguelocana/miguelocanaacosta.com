@@ -4,13 +4,19 @@
 @import "./Toggle.component.scss";
 @import "./Tag.component.scss";
 @import "./Button.component.scss";
+@import "./Minisection.component.scss";
 
 $title-color: #ff0000;
-$navbar-breakpoint: 0px;
 $card-radius: 0;
 $card-header-shadow: 0;
 $card-shadow: 0;
-$tablet: 600px;
+$tablet: 720px;
+
+$navbar-breakpoint: 0px;
+$navbar-background-color: transparent;
+$navbar-box-shadow-size: 0;
+$navbar-box-shadow-color: transparent;
+$navbar-item-hover-background-color: transparent;
 
 @import "~bulma/bulma.sass";
 
@@ -75,6 +81,10 @@ $breakpoint: 720px;
     .navbar-brand{
         align-items: center;
     }
+    .navbar-menu{
+        background-color: transparent;
+        box-shadow: none;
+    }
 
     a{
         background-color: transparent;
@@ -109,10 +119,13 @@ $breakpoint: 720px;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
         border-bottom: 1px solid var(--color-border-default);
+        color: var(--color-fg-default)
     }
 
     #me{
         margin: auto;
+        width: 130px;
+        border: 1px solid var(--color-border-default);
     }
 
 }
@@ -125,10 +138,13 @@ $breakpoint: 720px;
 
 #me_wrapper{
     text-align: center;
+    p{
+        text-align: left;
+    }
 }
-#me {
-    width: 130px;
-    border: 1px solid var(--color-border-default);
+
+.typing{
+    color: var(--color-fg-default);
 }
 
 a{
