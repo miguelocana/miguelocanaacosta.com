@@ -158,10 +158,6 @@ const IndexPage = () => {
                       🧬🖥️
                     </strong>
                   </p>
-
-                  <p>
-                    So, I've studied biotechnology, but my love for computers leads me to find a nexus between clinical data.
-                  </p>
                   
                   <p>
                     Estudié el grado de bio(tecno)logía,
