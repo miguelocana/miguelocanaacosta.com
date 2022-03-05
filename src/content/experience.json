@@ -1,55 +1,65 @@
 [
     {
-      "from": "Jan 2020",
+      "from": "May 2020",
       "to": "Act.",
       "what": "Software Developer",
       "where": "Santander T&O",
-      "url": null,
+      "url": "https://www.bancosantander.es/",
       "experience": [
         "Hice unas cuantas cosas",
-        "Otras más",
-        "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
+        "Otras más"
       ]
     },
     {
-      "from": "Jan 2019",
-      "to": "May 2020",
-      "what": "Internships",
-      "where": "CSIC ",
-      "url": null,
+      "from": "Sep 2019",
+      "to": "Sep 2021",
+      "what": "MSc in Bioinformatics and Biostatistics",
+      "where": "Oberta University of Catalunya",
+      "url": "https://www.uoc.edu/portal/es/index.html",
       "experience": [
         "Esos putos catetos que no saben",
         "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
       ]
     },
     {
-      "from": "Jan 2019",
+      "from": "Jan 2020",
       "to": "May 2020",
-      "what": "Internships",
-      "where": "Universitat Oberta de Catalunya ",
-      "url": null,
+      "what": "Bootcamp in Data Science",
+      "where": "NEOLAND",
+      "url": "https://www.neoland.es/",
       "experience": [
         "Esos putos catetos que no saben",
         "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
       ]
     },
     {
-      "from": "Jan 2019",
-      "to": "May 2020",
-      "what": "Internships",
-      "where": "Acerta I+D+i ",
-      "url": null,
+      "from": "May 2019",
+      "to": "Sep 2018",
+      "what": "Software developer",
+      "where": "Acerta I+D+i",
+      "url": "https://www.ucm.es/",
       "experience": [
-        "Esos putos catetos que no saben",
-        "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
+        "La graduación",
+        "Muchas cosas"
       ]
     },
     {
-      "from": "Jan 2019",
-      "to": "May 2020",
-      "what": "Internships",
-      "where": "Universidad Complutense de Madrid",
-      "url": null,
+      "from": "Sep 2013",
+      "to": "Sep 2018",
+      "what": "BSc in Biotechnology",
+      "where": "Complutense University of Madrid",
+      "url": "https://www.ucm.es/",
+      "experience": [
+        "La graduación",
+        "Muchas cosas"
+      ]
+    },
+    {
+      "from": "Sep 2017",
+      "to": "Sep 2018",
+      "what": "Bioinformatics",
+      "where": "CSIC",
+      "url": "https://www.csic.es/es",
       "experience": [
         "Esos putos catetos que no saben",
         "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"

@@ -11,8 +11,7 @@ import Tag from "../components/Tag"
 import ContactButton from "../components/ContactButton"
 import ReactTypingEffect from "react-typing-effect";
 import Minisection from "../components/Minisection"
-import GithubIcon from "../images/github.svg";
-import LinkedinIcon from "../images/linkedin.svg";
+import Notification from "../components/Notification";
 
 const IndexPage = () => {
 
@@ -71,7 +70,7 @@ const IndexPage = () => {
                   </span>
 
                   <a class="navbar-item" href="http://localhost:8000/" id="readme">
-                    <strong>README</strong>
+                    <strong>README.md</strong>
                   </a>
                 </div>
 
@@ -104,34 +103,39 @@ const IndexPage = () => {
                     
                     <Minisection title="Social media">
 
-                      <div class="card social-media">
-                        <header class="card-header">
-                          <button class="card-header-icon" >
-                            <span class="icon">
-                              <i class="fab fa-linkedin-in"></i>
-                            </span>
-                          </button>
-                          <p class="card-header-title">
-                              @miguelocanaacosta
-                          </p>
-                        </header>
-                      </div>
-                      <div class="card social-media">
-                        <header class="card-header">
-                          <button class="card-header-icon" >
-                            <span class="icon">
-                              <i class="fab fa-github"></i>
-                            </span>
-                          </button>
-                          <p class="card-header-title">
-                              @miguelocana
-                          </p>
-                        </header>
-                      </div>
+                      <a href="https://www.linkedin.com/in/miguelocanaacosta/" target="_blank">
+                        <div class="card social-media">
+                          <header class="card-header">
+                            <button class="card-header-icon" >
+                              <span class="icon">
+                                <i class="fab fa-linkedin-in"></i>
+                              </span>
+                            </button>
+                              <p class="card-header-title">
+                                  @miguelocanaacosta
+                              </p>
+                          </header>
+                        </div>
+                      </a>
+
+                      <a href="https://github.com/miguelocana" target="_blank">
+                        <div class="card social-media">
+                          <header class="card-header">
+                            <button class="card-header-icon" >
+                              <span class="icon">
+                                <i class="fab fa-github"></i>
+                              </span>
+                            </button>
+                            <p class="card-header-title">
+                                @miguelocana
+                            </p>
+                          </header>
+                        </div>
+                      </a>
 
                     </Minisection>
                     
-                    <Minisection title="Campos de interés">
+                    <Minisection title="Fields of interest">
                       <Tag title="machine-learning"/>{" "}
                       <Tag title="bioinformatics"/>{" "}
                       <Tag title="software-development"/>{" "}
@@ -140,43 +144,74 @@ const IndexPage = () => {
                 </div>
                 <div className="column is-three-quarter">
                   <p>
-                    Hey! I'm Miguel, I currently live in Madrid.
+                    Hey! I'm Miguel, I currently live in Madrid, Spain 🇪🇸.
                   </p>
 
                   <p>
-                    Soy{" "}
+                    I'm a{" "}
                     <strong>
                       <ReactTypingEffect
-                        text={["bioinformático", "software engineer"]}
+                        text={["bioinformatic", "software engineer"]}
                         speed={40}
                         className="typing"
                       />
+                      🧬🖥️
                     </strong>
                   </p>
-                  
+
                   <p>
-                    Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
+                    So, I've studied biotechnology, but my love for computers leads me to find a nexus between clinical data.
                   </p>
                   
                   <p>
-                    Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
-                  </p>
-                  
-                  <p>
-                    Cuando no estoy programando, estoy tocando la guitarra. Mis áreas de interés son
+                    Estudié el grado de bio(tecno)logía,
+                    aunque me crie entre ordenadores y
+                    siempre mostré un gran interés por la
+                    informática (y la música).
                   </p>
 
+                  <p>
+                    Acabé encontrando un nexo entre ambos
+                    mundos gracias a la entropía de los datos
+                    biológicos y clínicos, que acapararon toda
+                    mi atención
+                  </p>
+
+                  <p>
+                    Since then, when I'm not programming, I'm playing guitar 🎸.
+                  </p>
+
+                  <p>
+                    Currently, I'm working in a huge corporation. Here are a few technologies I've been working with recently:
+                    <div className="columns is-mobile" id="techs">
+                        <div className="column is-two-fifths">
+                          <ul>
+                            <li id="python">Python</li>
+                            <li id="shell">Shell</li>
+                            <li id="r">R</li>
+                            <li id="csharp">C#</li>
+                          </ul>
+                        </div>
+                        <div className="column is-three-fifths">
+                          <ul>
+                            <li id="pyspark">PySpark</li>
+                            <li id="javascript">JavaScript</li>
+                            <li id="html-css">HTML/CSS</li>
+                            <li id="docker">Docker</li>
+                          </ul>
+                        </div>
+                    </div>
+                  </p>
+                  
                 </div>
               </div>
             </Section>
 
             <Section title="experience">
               
-              <p>
-                <div className="notification">
-                  Un resumen de mi trayectoria profesional y académica...
-                </div>
-              </p>
+              <Notification>
+                Un resumen de mi trayectoria profesional y académica...
+              </Notification>
 
               {content.map((c) => {
                   return <Card content={c} />;
@@ -186,10 +221,9 @@ const IndexPage = () => {
 
 
             <Section title="contact">
-              <p>
-                Si quieres que trabajemos juntos, si tienes alguna pregunta o si sólo quieres saludar, <b>mi bandeja de entrada siempre está abierta</b> e intentaré responderte lo antes posible.
-              </p>
-              
+              <Notification>
+                If you want us to work together, if you have any questions or if you just want to say hello, <strong>my inbox is always open</strong> and I will try to answer you as soon as possible.
+              </Notification>
               <div className="container has-text-centered">
                 <ContactButton />
               </div>

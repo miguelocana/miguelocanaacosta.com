@@ -5,8 +5,8 @@
 @import "./Tag.component.scss";
 @import "./Button.component.scss";
 @import "./Minisection.component.scss";
+@import "./Notification.component.scss";
 
-$title-color: #ff0000;
 $card-radius: 0;
 $card-header-shadow: 0;
 $card-shadow: 0;
@@ -134,10 +134,15 @@ $breakpoint: 720px;
     padding: 20px;
     border-top: 1px solid var(--color-border-default);
     background-color: var(--color-wrapper-content-bg);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 #me_wrapper{
     text-align: center;
+    a:hover{
+        text-decoration: none;
+    }
     p{
         text-align: left;
     }
@@ -155,3 +160,52 @@ a{
     }
 }
 
+
+#techs {
+    ul {
+        font-family: monospace;
+        color: var(--color-fg-default);
+        list-style: none;
+        font-size: var(--fz-sm);
+        
+        & li::before {
+          content: "●";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          font-weight: bold; /* If you want it to be bold */
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 1em; /* Also needed for space (tweak if needed) */
+          margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+
+        #python::before{
+            color: #3572A5;
+        }
+
+        #docker::before{
+            color: #384d54;
+        }
+
+        #javascript::before{
+            color: #f1e05a;
+        }
+
+        #pyspark::before{
+            color: #c22d40;
+        }
+
+        #shell::before{
+            color: #89e051;
+        }
+
+        #csharp::before{
+            color: #178600;
+        }
+
+        #html-css::before{
+            color: #e34c26;
+        }
+
+        #r::before{
+            color: #198CE7;
+        }
+      }
+}
