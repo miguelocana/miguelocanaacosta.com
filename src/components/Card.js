@@ -29,16 +29,18 @@ export default function Card(props) {
         <div class="card-content">
           <div class="content">
             <div className="title is-5">
-              {content.what} <span>@ {content.where}</span>
+              {content.what} <span>@</span> <a href={content.url} target="_blank">{content.where}</a>
             </div>
 
-            <div className="subtitle is-6 is-family-monospace">
+            <div className="subtitle is-6 is-family-monospace" id="date">
               {content.from} - {content.to}
             </div>
 
             <ul>
               {content.experience.map((e) => (
-                <li>{e}</li>
+                <li>
+                  {e}
+                </li>
               ))}
             </ul>
           </div>

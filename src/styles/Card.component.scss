@@ -53,9 +53,30 @@
     padding: 0px;
 
     .title {
-      font-weight: 700;
-      span {
-        color: lightblue;
+      color: var(--color-fg-default);
+      font-weight: 600;
+      span{
+        color: var(--color-fg-accent);
+      }
+      a {
+        color: var(--color-fg-accent);
+      }
+    }
+
+    #date {
+      color: var(--color-fg-muted);
+    }
+
+    ul {
+      color: var(--color-fg-muted);
+      list-style: none;
+      & li::before {
+        content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: var(--color-fg-accent); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
       }
     }
   }
