@@ -6,30 +6,21 @@
       "where": "Santander T&O",
       "url": "https://www.bancosantander.es/",
       "experience": [
-        "Hice unas cuantas cosas",
-        "Otras más"
+        "Developed advanced scripts of control models and validation of sensitive data of the entire Leasing & Renting department with Pyspark used by the operatives in decision making.",
+        "Design and development of highly interactive applications with Python, C# and Shell connected to Hive SQL.",
+        "Making of multiples Web Scrapping solutions with Selenium that include the Spain Tax Agency and different internal pages of the bank for various departments."
       ]
     },
     {
-      "from": "Sep 2019",
+      "from": "Sep 2020",
       "to": "Sep 2021",
-      "what": "MSc in Bioinformatics and Biostatistics",
+      "what": "Mental Illness Predictor",
       "where": "Oberta University of Catalunya",
       "url": "https://www.uoc.edu/portal/es/index.html",
       "experience": [
-        "Esos putos catetos que no saben",
-        "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
-      ]
-    },
-    {
-      "from": "Jan 2020",
-      "to": "May 2020",
-      "what": "Bootcamp in Data Science",
-      "where": "NEOLAND",
-      "url": "https://www.neoland.es/",
-      "experience": [
-        "Esos putos catetos que no saben",
-        "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
+        "Master's thesis where a tool was created to predict mental illness from the gut microbiome in humans.",
+        "Creation of a REST API architecture with Django in charge of the logic to train Machine Learning models from the microbiomes, connected to a PostgreSQL database.",
+        "Design and development of a highly interactive interface with Reactjs connected to the backend."
       ]
     },
     {
@@ -37,32 +28,21 @@
       "to": "Sep 2018",
       "what": "Software developer",
       "where": "Acerta I+D+i",
-      "url": "https://www.ucm.es/",
+      "url": "https://acerta-cert.com/sobre-idi/",
       "experience": [
-        "La graduación",
-        "Muchas cosas"
-      ]
-    },
-    {
-      "from": "Sep 2013",
-      "to": "Sep 2018",
-      "what": "BSc in Biotechnology",
-      "where": "Complutense University of Madrid",
-      "url": "https://www.ucm.es/",
-      "experience": [
-        "La graduación",
-        "Muchas cosas"
+        "Process of qualification and certification R+D of projects of the Information Technology (IT) sector."
       ]
     },
     {
       "from": "Sep 2017",
-      "to": "Sep 2018",
+      "to": "Aug 2018",
       "what": "Bioinformatics",
       "where": "CSIC",
       "url": "https://www.csic.es/es",
       "experience": [
-        "Esos putos catetos que no saben",
-        "La verdad, no sé muy bien que decir, llegados a este punto sólo estoy rellenando"
+        "Study of the behavior of aquaporins before different post-harvest conservation treatments at the Spanish Superior Council of Scientific Investigations.",
+        "Design and development of a Python solution for qPCR data normalization and maintenance in PostgreSQL.",
+        "Created mathematical and statistical models in R for presentation of study results."
       ]
     }
   ]
