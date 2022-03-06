@@ -29,7 +29,7 @@ $breakpoint: 720px;
     }
     color: var(--color-fg-default);
     padding: 20px;
-    height: calc(100vh - 40px);
+    height: 100vh;
     transition: all .5s;
     padding: 0px;
     .button{
@@ -208,4 +208,17 @@ a{
             color: #198CE7;
         }
       }
+}
+
+#notfound{
+    .title{
+        font-family: monospace;
+        font-size: 100px;
+        margin-bottom: 20px;
+        color: var(--color-fg-default);
+    }
+    .subtitle{
+        font-size: 40px;
+        color: var(--color-fg-muted);
+    }
 }
