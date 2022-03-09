@@ -128,6 +128,10 @@ $breakpoint: 720px;
         border: 1px solid var(--color-border-default);
     }
 
+    strong{
+        color: var(--color-fg-default);
+    }
+
 }
 
 #footer{
@@ -180,7 +184,7 @@ a{
             color: #3572A5;
         }
 
-        #docker::before{
+        #react::before{
             color: #384d54;
         }
 
