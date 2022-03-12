@@ -15,16 +15,9 @@ import Notification from "../components/Notification";
 
 const IndexPage = () => {
 
-  let defaultDark
-  if (typeof window === 'undefined') {
-    defaultDark = 'undefined'
-  } else {
-    defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-
   const [theme, setTheme] = useLocalStorage(
     "theme",
-    defaultDark ? "dark" : "light"
+    "dark"
   );
   
   const firstLoad = theme === "dark" ? true : false;
@@ -76,7 +69,7 @@ const IndexPage = () => {
                     /
                   </span>
 
-                  <a class="navbar-item" href="http://localhost:8000/" id="readme">
+                  <a class="navbar-item" href="http://www.miguelocanaacosta.com/" id="readme">
                     <strong>README.md</strong>
                   </a>
                 </div>
