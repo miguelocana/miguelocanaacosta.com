@@ -15,7 +15,13 @@ import Notification from "../components/Notification";
 
 const NotFoundPage = () => {
 
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  let defaultDark
+  if (typeof window === 'undefined') {
+    defaultDark = 'undefined'
+  } else {
+    defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
   const [theme, setTheme] = useLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"

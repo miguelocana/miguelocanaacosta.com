@@ -14,7 +14,14 @@ import Minisection from "../components/Minisection"
 import Notification from "../components/Notification";
 
 const IndexPage = () => {
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  let defaultDark
+  if (typeof window === 'undefined') {
+    defaultDark = 'undefined'
+  } else {
+    defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
   const [theme, setTheme] = useLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"
@@ -30,6 +37,7 @@ const IndexPage = () => {
       setIsDark(false)
     }
   };
+
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
