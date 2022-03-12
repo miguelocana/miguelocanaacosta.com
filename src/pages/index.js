@@ -14,7 +14,6 @@ import Minisection from "../components/Minisection"
 import Notification from "../components/Notification";
 
 const IndexPage = () => {
-
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
     "theme",
