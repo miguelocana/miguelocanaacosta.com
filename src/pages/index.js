@@ -25,6 +25,7 @@ const IndexPage = () => {
     <main className="app" data-theme={theme}>
 
       <Helmet>
+        <title>Miguel Ocaña</title>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
       </Helmet>
 
