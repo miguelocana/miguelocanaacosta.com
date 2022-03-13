@@ -14,27 +14,11 @@ import Minisection from "../components/Minisection"
 import Notification from "../components/Notification";
 
 const IndexPage = () => {
-
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    "dark"
-  );
-  
-  const firstLoad = theme === "dark" ? true : false;
-  const [isDark, setIsDark] = useState(firstLoad);
-
-  const handleToggle = (theme) => {
-    if (theme === "dark") {
-      setIsDark(true)
-    } else {
-      setIsDark(false)
-    }
-  };
+  const [theme, setTheme] = useState("dark")
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    handleToggle(newTheme);
   };
 
   return (
@@ -77,15 +61,19 @@ const IndexPage = () => {
                 <div class="navbar-end">
                   <div class="navbar-item">
                     <div class="buttons">
-                      <Toggle
-                        defaultChecked={isDark}
-                        className="toggle"
-                        onChange={switchTheme}
-                        icons={{
-                          checked: null,
-                          unchecked: null
-                        }}
-                      />
+                      <button onClick={() => switchTheme()}>Change color</button>
+                      {/*
+                        <Toggle
+                          defaultChecked={true}
+                          className="toggle"
+                          onChange={switchTheme}
+                          icons={{
+                            checked: null,
+                            unchecked: null
+                          }}
+                        />
+                      */
+                      }
                     </div>
                   </div>
                 </div>

@@ -68,7 +68,7 @@ const NotFoundPage = () => {
                     /
                   </span>
 
-                  <a class="navbar-item" href="http://localhost:8000/" id="readme">
+                  <a class="navbar-item" href="http://www.miguelocanaacosta.com/" id="readme">
                     <strong>README.md</strong>
                   </a>
                 </div>
@@ -99,7 +99,7 @@ const NotFoundPage = () => {
               
               <p className="title">404</p>
               <p className="subtitle">Page not found</p>
-              <a href="http://localhost:8000/">← Go back</a>
+              <a href="http://www.miguelocanaacosta.com/">← Go back</a>
             </Section>
 
           </div>
