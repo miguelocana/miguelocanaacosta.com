@@ -61,19 +61,15 @@ const IndexPage = () => {
                 <div class="navbar-end">
                   <div class="navbar-item">
                     <div class="buttons">
-                      <button onClick={() => switchTheme()}>Change color</button>
-                      {/*
-                        <Toggle
-                          defaultChecked={true}
-                          className="toggle"
-                          onChange={switchTheme}
-                          icons={{
-                            checked: null,
-                            unchecked: null
-                          }}
-                        />
-                      */
-                      }
+                      <Toggle
+                        defaultChecked={true}
+                        className="toggle"
+                        onChange={switchTheme}
+                        icons={{
+                          checked: null,
+                          unchecked: null
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
