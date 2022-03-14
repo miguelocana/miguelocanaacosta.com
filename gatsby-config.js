@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
       title: `Miguel Ocaña`,
-    siteUrl: `https://www.miguelocanaacosta.com`
+      description:
+        `Miguel Ocaña is a software developer/bioinformatician who builds all kinds of applications`,
+      siteUrl: `https://miguelocanaacosta.com`,
   },
   plugins: [
     "gatsby-plugin-sass", 
@@ -9,7 +11,8 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-sass",
     "gatsby-transformer-remark",
-    'gatsby-plugin-netlify',
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -28,6 +31,7 @@ module.exports = {
         display: 'standalone',
         icon: 'src/images/logo.png',
       },
-    }
+    },
+
   ]
 };
