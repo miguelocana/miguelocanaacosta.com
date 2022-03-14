@@ -38,7 +38,6 @@ const Head = ({ title, description }) => {
   return (
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
 
-        <title>Miguel Ocaña</title>
         <link rel="canonical" href="https://miguelocanaacosta.com/" />
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 

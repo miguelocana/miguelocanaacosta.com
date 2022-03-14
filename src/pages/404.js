@@ -1,17 +1,13 @@
 import React, {useState} from "react"
 import "../styles/styles.scss"
 import Section from "../components/Section"
-import me from "../images/me.jpg"
 import Helmet from "react-helmet"
-import Card from "../components/Card"
-import content from "../content/experience.json"
 import useLocalStorage from "use-local-storage";
 import Toggle from "react-toggle";
-import Tag from "../components/Tag"
-import ContactButton from "../components/ContactButton"
-import ReactTypingEffect from "react-typing-effect";
-import Minisection from "../components/Minisection"
-import Notification from "../components/Notification";
+
+// Components
+import Section from '../components/Section';
+import Head from '../components/Head';
 
 const NotFoundPage = () => {
 
@@ -39,9 +35,7 @@ const NotFoundPage = () => {
   return (
     <main className="app" data-theme={theme}>
 
-      <Helmet>
-        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-      </Helmet>
+      <Head />
 
       <section class="hero is-fullheight">
 
