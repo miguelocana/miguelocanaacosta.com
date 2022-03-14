@@ -82,14 +82,14 @@ const IndexPage = () => {
             <Section title={null} id="introduction">
               <div className="columns">
                 <div className="column is-one-quarter" id="me_wrapper">
-                    <img src={me} id="me"/>
+                    <img src={me} id="me" alt="Miguel Ocaña"/>
                     
                     <Minisection title="Find me">
 
                       <a href="https://www.linkedin.com/in/miguelocanaacosta/" target="_blank">
                         <div class="card social-media">
                           <header class="card-header">
-                            <button class="card-header-icon" >
+                            <button class="card-header-icon" name="linkedin">
                               <span class="icon">
                                 <i class="fab fa-linkedin-in"></i>
                               </span>
@@ -104,7 +104,7 @@ const IndexPage = () => {
                       <a href="https://github.com/miguelocana" target="_blank">
                         <div class="card social-media">
                           <header class="card-header">
-                            <button class="card-header-icon" >
+                            <button class="card-header-icon" name="github">
                               <span class="icon">
                                 <i class="fab fa-github"></i>
                               </span>

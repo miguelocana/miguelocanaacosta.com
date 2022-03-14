@@ -32,6 +32,14 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "cj_qMQDjJIWExzWdYbgm_nz0OFQTDr0d1WOH9zw8S6A",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true
+      },
+    },
   ]
 };

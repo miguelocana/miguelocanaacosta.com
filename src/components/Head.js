@@ -39,7 +39,7 @@ const Head = ({ title, description }) => {
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
 
         <title>Miguel Ocaña</title>
-        <link rel="canonical" href="miguelocanaacosta.com" />
+        <link rel="canonical" href="https://miguelocanaacosta.com/" />
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
         <html lang="en" />
@@ -52,7 +52,7 @@ const Head = ({ title, description }) => {
         <meta property="og:type" content="website" />
 
         <meta name="google-site-verification" content="cj_qMQDjJIWExzWdYbgm_nz0OFQTDr0d1WOH9zw8S6A" />
-        
+
     </Helmet>
   );
 };
