@@ -2,8 +2,12 @@ module.exports = {
   siteMetadata: {
       title: `Miguel Ocaña`,
       description:
-        `Miguel Ocaña is a software developer/bioinformatician who builds all kinds of applications`,
+        `A simple portfolio based on Github's styles built by Miguel Ocaña.`,
       siteUrl: `https://miguelocanaacosta.com`,
+      author: {
+        name: `Miguel Ocaña`,
+        summary: `a software developer/bioinformatician who builds all kinds of applications`
+      }
   },
   plugins: [
     "gatsby-plugin-sass", 
@@ -36,7 +40,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "cj_qMQDjJIWExzWdYbgm_nz0OFQTDr0d1WOH9zw8S6A",
+        trackingId: "G-RBJ02SM4TY",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true
       },
