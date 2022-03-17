@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import "../styles/styles.scss"
-import Section from "../components/Section"
 import Helmet from "react-helmet"
 import useLocalStorage from "use-local-storage";
 import Toggle from "react-toggle";
