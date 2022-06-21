@@ -37,13 +37,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-RBJ02SM4TY",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-RBJ02SM4TY", // Google Analytics / GA
+        ],
+      },
+      pluginConfig: {
         head: true
       },
-    },
+    }
   ]
 };
